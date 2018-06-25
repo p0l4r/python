@@ -1,9 +1,17 @@
-N=int(input("Enter value of N: "))
-mul=1
+def factorial(n):
+    n=int(n)
+    t=1
+    for i in range(1,n+1):
+        t=t*i
+     
 
-for i in range(N):
-    mul=mul*(i+1)
-    i=i+1
+    return t
 
-print(mul)
 
+def main():
+    n=int(input("Enter A Number: "))
+    print(factorial(n))
+
+
+if __name__ == '__main__':
+    main()

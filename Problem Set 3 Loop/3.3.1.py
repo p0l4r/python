@@ -1,7 +1,16 @@
-N=int(input("Enter value of N: "))
-summation=0
-for i in range(N):
-    summation=summation+(i+1)
-    i=i+1
+def summation(n):
+    n = int(n)
+    t = 0
+    for i in range(1, n + 1):
+        t = t + i
 
-print(summation)
+    return t
+
+
+def main():
+    n = int(input("Enter A Number: "))
+    print(summation(n))
+
+
+if __name__ == '__main__':
+    main()
